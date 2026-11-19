@@ -29,7 +29,7 @@
 <body>
   <main>
 <h1>paran 개인정보처리방침</h1>
-    <p class="date">2026년 11월 18일</p>
+    <p class="date">2026년 11월 19일</p>
     <p>paran은 운영자가 소유한 YouTube 채널의 관리와 업로드에 필요한 정보를 처리합니다.</p>
 
     <h2>Google 계정에 요청하는 권한</h2>
@@ -40,6 +40,8 @@
       <dd>채널과 영상을 식별하고 채널 및 영상 지표를 조회합니다.</dd>
       <dt><code>youtube</code></dt>
       <dd>업로드한 영상의 공개 상태를 변경하고 YouTube에서 게시를 예약합니다.</dd>
+      <dt><code>yt-analytics-monetary.readonly</code> (선택 기능)</dt>
+      <dd>운영자가 별도로 승인한 수익 창출 채널의 YouTube Analytics 수익 보고서를 읽습니다. 이 기능에서는 예상 수익과 관련 조회수, CPM, 광고 노출 등 보고서 지표를 표시합니다.</dd>
     </dl>
 
     <h2>처리하는 정보와 사용 목적</h2>
@@ -47,15 +49,18 @@
       <li>채널 ID, 이름, 핸들, 프로필 및 배너 정보로 올바른 채널을 식별합니다.</li>
       <li>영상 파일과 제목, 설명, 공개 상태, 예약 시간, 영상 링크를 업로드와 게시 관리에 사용합니다.</li>
       <li>구독자 수, 조회수, 좋아요 수, 댓글 수 등 YouTube가 제공하는 지표를 채널과 영상 현황 확인에 사용합니다.</li>
+      <li>수익 읽기 기능을 연결한 채널의 원화 기준 예상 수익과 일별·기간별 수익, 관련 지표를 해당 운영자의 수익 현황판에 표시합니다.</li>
       <li>Google이 발급한 OAuth 토큰을 사용해 승인된 작업을 수행합니다. Google 계정 비밀번호는 도구에서 수집하지 않습니다.</li>
     </ul>
 
     <h2>보관과 전송</h2>
     <p>OAuth 갱신 토큰과 채널 설정, 작업 기록은 운영자의 Windows 컴퓨터에 저장합니다. 갱신 토큰 파일에는 Windows 파일 접근 권한을 적용합니다. 계정 연결, 채널 조회, 영상 업로드와 게시는 Google OAuth 및 YouTube API로 처리합니다.</p>
+    <p>수익 보고서 읽기 권한은 업로드 권한과 별도로 승인받고 별도의 인증 파일에 보관합니다. 수익 보고서와 예상 수익 기록도 운영자의 Windows 컴퓨터에 저장하며, 결제나 지급 작업에는 사용하지 않습니다.</p>
     <p>운영자가 Telegram 알림을 별도로 설정한 경우, 알림에 포함된 채널명, 영상 제목과 링크, 예약 시각, 작업 상태 또는 오류 내용이 지정한 Telegram 채팅으로 전송될 수 있습니다. 이 알림은 Telegram 설정을 해제하면 중단됩니다.</p>
 
     <h2>권한 철회와 로컬 데이터 삭제</h2>
     <p>운영자는 <a href="https://myaccount.google.com/connections?hl=ko">Google 계정의 서드 파티 연결 관리</a>에서 paran에 부여한 액세스를 철회할 수 있습니다. Windows에 저장된 인증 파일과 채널 정보의 사본은 별도로 삭제할 수 있습니다. 데이터 처리나 삭제에 대한 문의는 아래 연락처로 보내 주세요.</p>
+    <p>수익 기능의 로컬 인증 파일과 수익 기록도 별도로 삭제할 수 있습니다. Google에서 paran 앱의 연결 전체를 철회하면 기존 업로드 인증에도 영향이 있을 수 있습니다.</p>
 
     <h2>관련 정책</h2>
     <p>Google API에서 받은 정보의 사용과 전송에는 제한적 사용 요건을 포함한 <a href="https://developers.google.com/terms/api-services-user-data-policy?hl=ko">Google API 서비스 사용자 데이터 정책</a>이 적용됩니다. Google의 데이터 처리 방식은 <a href="https://policies.google.com/privacy?hl=ko">Google 개인정보처리방침</a>에서 확인할 수 있습니다.</p>
